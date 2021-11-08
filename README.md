@@ -1,4 +1,4 @@
 - 👋 Hey! I’m @askmy-stack
 - 👀 I’m interested in Web Development, UI/UX Data Science and Machine Learning 
 - 🌱 I’m currently learning Backend Web Development, UI/UX Data Science and Machine Learning Algorithms
-- 📫 Mali Id-abhinavsaikamineni@gmail.com
+- 📫 Mali Id -abhinavsaikamineni@gmail.com
