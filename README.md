@@ -1,4 +1,4 @@
 - 👋 Hey! I’m Abhinaysai 
-- 👀 I’m interested in Web Development, UI/UX Data Science and Machine Learning 
-- 🌱 I’m currently learning Backend Web Development, UI/UX Data Science and Machine Learning Algorithms
+- 👀 I’m interested in Web Development, Data Science, Machine Learning & Cloud Computing
+- 🌱 I’m currently learning Backend Web Development, Data Science, Databases & Machine Learning Algorithms
 - 📫 Mali Id -abhinavsaikamineni@gmail.com
