@@ -22,18 +22,18 @@
 
 ### 💡 The Perspective
 
-> *"Intelligence without robust infrastructure is just a research experiment."*
+> *"Intelligence without strong infrastructure is merely a research experiment."*
 
-I specialize in the bridge between raw neural architecture and production reality. My work is driven by the belief that the future of AI lies in **Agentic Systems**—models that don't just generate text, but actively utilize tools, reason through complex clinical/engineering data, and execute tasks within fault-tolerant, scalable environments. I build the pipelines that allow AI to safely interact with the real world.
+My expertise lies in building bridges between highly advanced neural architectures and production-ready pipelines. The concept underlying my work lies in the belief that the next generation of AI technology will emerge through **Agentic Systems**—architectures that are able to reason about engineering and clinical data, engage with external utilities, and function in scalable environments. My goal is to build infrastructures and pipelines which enable AI systems to be used in production.
 
 ---
 
 ### ⚡ What I Do
 
-- **🧠 Neural Architecture:** Engineering pipelines for 3D Biomedical Vision and high-volume Time-Series analysis (e.g., parsing 900+ hours of clinical EEG data).
-- **🤖 Agentic AI & LLMOps:** Orchestrating multi-agent environments using LLama-3.3-70b, LangChain, and RAG-based FAISS vector retrieval.
-- **🏗️ System Engineering:** Transitioning research code into resilient microservices using Docker, Kubernetes, and Terraform on AWS.
-- **⚙️ Pipeline Automation:** Building observable, high-throughput data and training workflows with Apache Airflow and CI/CD best practices.
+- **🧠 Neural Architecture:** Creation of scalable pipelines for the analysis of 3D biomedical imaging data as well as big time-series datasets, like analyzing hundreds of hours of clinical EEG data.
+- **🤖 Agentic AI & LLMOps:** Architecting multi-agent AI architectures utilizing frameworks like LLaMA 3.3 70B, LangChain, and RAG-driven FAISS search.
+- **🏗️ Systems Engineering:** Moving research prototypes to production-quality microservices using Docker, Kubernetes, Terraform, and AWS.
+- **⚙️ Pipeline Automation:** Implementation of high-capacity, observable pipelines for data ingestion and machine learning experiments using Apache Airflow.
 
 ---
 
