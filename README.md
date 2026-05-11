@@ -42,23 +42,9 @@ I specialize in the bridge between raw neural architecture and production realit
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,go,cpp,bash,linux&theme=dark&perline=8" />
   <br/><br/>
-  <img src="https://skillicons.dev/icons?i=kafka,airflow,postgres,redis,mongodb,neo4j,elasticsearch,rabbitmq&theme=dark&perline=8" />
+  <img src="https://skillicons.dev/icons?i=kafka,postgres,redis,mongodb,rabbitmq,sqlite,mysql,firebase&theme=dark&perline=8" />
   <br/><br/>
   <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,grafana,prometheus,nginx,git&theme=dark&perline=8" />
-</div>
-
----
-
-### 📊 Engineering Telemetry
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=askmy-stack&theme=transparent&hide_border=true&ring=58a6ff&fire=ff6b6b&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e" width="60%"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=askmy-stack&theme=react-dark&hide_border=true&area=true&color=58a6ff&line=58a6ff&point=ffffff&bg_color=0d1117" width="100%"/>
 </div>
 
 ---
