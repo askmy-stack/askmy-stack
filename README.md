@@ -73,7 +73,25 @@ I specialize in the bridge between raw neural architecture and production realit
 </table>
 
 <div align="center">
+  <img src="https://streak-stats.demolab.com/?user=askmy-stack&theme=transparent&hide_border=true&ring=58a6ff&fire=ff6b6b&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e" width="55%"/>
+</div>
+
+<br/>
+
+<div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=askmy-stack&theme=react-dark&hide_border=true&area=true&color=58a6ff&line=58a6ff&point=ffffff&bg_color=0d1117" width="100%"/>
+</div>
+
+---
+
+### 🐍 Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake.svg" />
+  </picture>
 </div>
 
 ---
