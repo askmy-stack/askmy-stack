@@ -24,7 +24,7 @@
 
 > *"Intelligence without strong infrastructure is merely a research experiment."*
 
-My expertise lies in building bridges between highly advanced neural architectures and production-ready pipelines. The concept underlying my work lies in the belief that the next generation of AI technology will emerge through **Agentic Systems**—architectures that are able to reason about engineering and clinical data, engage with external utilities, and function in scalable environments. My goal is to build infrastructures and pipelines which enable AI systems to be used in production.
+My expertise lies in building bridges between highly advanced neural architectures and production-ready pipelines. The concept underlying my work lies in the belief that the next generation of AI technology will emerge through **Agentic Systems** architectures that are able to reason about engineering and clinical data, engage with external utilities, and function in scalable environments. My goal is to build infrastructures and pipelines which enable AI systems to be used in production.
 
 ---
 
