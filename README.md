@@ -1,103 +1,91 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:3b82f6&height=250&section=header&text=Abhinaysai%20Kamineni&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Engineering%20the%20Future%20of%20Autonomous%20Systems&descSize=22&descColor=3b82f6&descAlignY=55" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:000000,100:0d1117&height=180&section=header&text=Abhinaysai%20Kamineni&fontSize=55&fontColor=58a6ff&animation=twinkling&fontAlignY=40" width="100%"/>
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&width=800&lines=Building+systems+that+think,+act,+and+scale.;Bridging+Deep+Learning+and+Fault-Tolerant+Infrastructure.;Architecting+Agentic+Pipelines+%26+LLMOps;Turning+raw+tensor+math+into+production+reality." alt="Typing SVG" />
+  <a href="https://askmystack.space" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-askmystack.space-121820?style=for-the-badge&logo=vercel&logoColor=white&borderColor=58a6ff" alt="Portfolio"/>
+  </a>
+  <a href="https://linkedin.com/in/abhinaysai-kamineni" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-121820?style=for-the-badge&logo=linkedin&logoColor=0A66C2&borderColor=58a6ff" alt="LinkedIn"/>
+  </a>
 </div>
 
 <br/>
 
-### 🌌 The Manifesto
-
-> *The next era of artificial intelligence isn't just about scaling parameters—it's about **agency, orchestration, and reliability**.* My engineering philosophy sits at the intersection of deep learning and distributed systems. I don't just train models; I architect the infrastructure that allows AI to step out of the sandbox and interact with the real world. From processing 900+ hours of clinical EEG data to orchestrating multi-agent LLM pipelines, my goal is to build intelligent systems that are as observable and fault-tolerant as traditional microservices.
+<div align="center">
+  <h3>Architecting the infrastructure for autonomous, agentic AI.</h3>
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&pause=1000&color=8B949E&center=true&width=600&lines=Bridging+Deep+Learning+with+Fault-Tolerant+Systems;Scaling+Multi-Agent+LLM+Pipelines;Building+Production-Grade+MLOps+Architecture" alt="Typing SVG" />
+</div>
 
 ---
 
-### ⚙️ Core Architecture
+### 💡 The Perspective
 
-<table align="center" width="100%">
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <h3>🧠 Neural Systems</h3>
-      <p align="center">
-        3D Biomedical Vision<br>
-        Time-Series & Biosignals<br>
-        Agentic AI & LLMs<br>
-        RAG & Vector Search
-      </p>
+> *"Intelligence without robust infrastructure is just a research experiment."*
+
+I specialize in the bridge between raw neural architecture and production reality. My work is driven by the belief that the future of AI lies in **Agentic Systems**—models that don't just generate text, but actively utilize tools, reason through complex clinical/engineering data, and execute tasks within fault-tolerant, scalable environments. I build the pipelines that allow AI to safely interact with the real world.
+
+---
+
+### ⚡ What I Do
+
+- **🧠 Neural Architecture:** Engineering pipelines for 3D Biomedical Vision and high-volume Time-Series analysis (e.g., parsing 900+ hours of clinical EEG data).
+- **🤖 Agentic AI & LLMOps:** Orchestrating multi-agent environments using LLama-3.3-70b, LangChain, and RAG-based FAISS vector retrieval.
+- **🏗️ System Engineering:** Transitioning research code into resilient microservices using Docker, Kubernetes, and Terraform on AWS.
+- **⚙️ Pipeline Automation:** Building observable, high-throughput data and training workflows with Apache Airflow and CI/CD best practices.
+
+---
+
+### 🛠️ The Tech Ecosystem
+
+<details>
+  <summary><b>Languages & Core Libraries</b></summary>
+  <br/>
+  <img src="https://skillicons.dev/icons?i=python,go,cpp,pytorch,tensorflow,fastapi&theme=dark" />
+</details>
+
+<details>
+  <summary><b>Cloud, Infrastructure & MLOps</b></summary>
+  <br/>
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,bash&theme=dark" />
+</details>
+
+<details>
+  <summary><b>Data Engineering & Storage</b></summary>
+  <br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,kafka,git&theme=dark" />
+</details>
+
+---
+
+### 📊 Engineering Telemetry
+
+<table align="center" style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;">
+      <img src="https://github-readme-stats.vercel.app/api?username=askmy-stack&show_icons=true&theme=transparent&hide_border=true&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&count_private=true&rank_icon=github" height="160"/>
     </td>
-    <td width="33%" valign="top" align="center">
-      <h3>🏗️ Infrastructure</h3>
-      <p align="center">
-        Distributed Training<br>
-        Container Orchestration<br>
-        Infrastructure as Code<br>
-        Cloud Native (AWS)
-      </p>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <h3>🚀 MLOps</h3>
-      <p align="center">
-        CI/CD for ML<br>
-        DAGs & Pipeline Automation<br>
-        Model Observability<br>
-        High-Throughput Inference
-      </p>
+    <td align="center" style="border: none;">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=askmy-stack&layout=compact&theme=transparent&hide_border=true&title_color=58a6ff&text_color=8b949e" height="160"/>
     </td>
   </tr>
 </table>
 
----
-
-### 🛠️ The Tech Stack
-
 <div align="center">
-  <p><b>Languages & Frameworks</b></p>
-  <img src="https://skillicons.dev/icons?i=py,go,cpp,pytorch,tensorflow,fastapi&theme=dark" />
-  <br><br>
-  <p><b>Infrastructure & Tooling</b></p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,bash&theme=dark" />
-  <br><br>
-  <p><b>Data & Orchestration</b></p>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,kafka,git,github&theme=dark" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=askmy-stack&theme=react-dark&hide_border=true&area=true&color=58a6ff&line=58a6ff&point=ffffff&bg_color=0d1117" width="100%"/>
 </div>
 
 ---
 
-### 📊 Telemetry & Metrics
+### 🔭 Current Focus & Validations
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=askmy-stack&theme=react-dark&hide_border=true&area=true&color=3b82f6&line=3b82f6&point=ffffff&bg_color=0d1117" width="100%"/>
-</div>
+- 🏗️ **Currently Building:** Expanding the multi-agent framework on `askmystack.space` to include memory-persistent, specialized sub-agents.
+- 📚 **Certifications:** AWS Certified AI Practitioner | Google Advanced Data Analytics | Red Hat (RH294/RH134).
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=askmy-stack&show_icons=true&theme=transparent&hide_border=true&title_color=3b82f6&text_color=c9d1d9&icon_color=3b82f6&count_private=true&rank_icon=github" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=askmy-stack&layout=compact&theme=transparent&hide_border=true&title_color=3b82f6&text_color=c9d1d9" height="165"/>
-</div>
-
----
-
-### 🌐 Comm Link
-
-<div align="center">
-  <a href="https://askmystack.space/">
-    <img src="https://img.shields.io/badge/Enter_The_Space-0d1117?style=for-the-badge&logo=spacex&logoColor=3b82f6&borderColor=3b82f6" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/abhinaysai-kamineni">
-    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=3b82f6" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:kamineniabhinaysai@gmail.com">
-    <img src="https://img.shields.io/badge/Ping_Me-0d1117?style=for-the-badge&logo=gmail&logoColor=3b82f6" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:161b22,100:0d1117&height=120&section=footer" width="100%"/>
+  <p style="color: #8b949e; font-size: 14px;"><i>"Deploying models is easy. Building systems that last is engineering."</i></p>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:121820,100:0d1117&height=20&section=footer" width="100%"/>
 </div>
