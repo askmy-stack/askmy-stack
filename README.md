@@ -39,41 +39,20 @@ I specialize in the bridge between raw neural architecture and production realit
 
 ### 🛠️ The Tech Ecosystem
 
-<details>
-  <summary><b>Languages & Core Libraries</b></summary>
-  <br/>
-  <img src="https://skillicons.dev/icons?i=python,go,cpp,pytorch,tensorflow,fastapi&theme=dark" />
-</details>
-
-<details>
-  <summary><b>Cloud, Infrastructure & MLOps</b></summary>
-  <br/>
-  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,bash&theme=dark" />
-</details>
-
-<details>
-  <summary><b>Data Engineering & Storage</b></summary>
-  <br/>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,kafka,git&theme=dark" />
-</details>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,go,cpp,bash,linux&theme=dark&perline=8" />
+  <br/><br/>
+  <img src="https://skillicons.dev/icons?i=kafka,airflow,postgres,redis,mongodb,neo4j,elasticsearch,rabbitmq&theme=dark&perline=8" />
+  <br/><br/>
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,grafana,prometheus,nginx,git&theme=dark&perline=8" />
+</div>
 
 ---
 
 ### 📊 Engineering Telemetry
 
-<table align="center" style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api?username=askmy-stack&show_icons=true&theme=transparent&hide_border=true&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&count_private=true&rank_icon=github" height="160"/>
-    </td>
-    <td align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=askmy-stack&layout=compact&theme=transparent&hide_border=true&title_color=58a6ff&text_color=8b949e" height="160"/>
-    </td>
-  </tr>
-</table>
-
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=askmy-stack&theme=transparent&hide_border=true&ring=58a6ff&fire=ff6b6b&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e" width="55%"/>
+  <img src="https://streak-stats.demolab.com/?user=askmy-stack&theme=transparent&hide_border=true&ring=58a6ff&fire=ff6b6b&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e" width="60%"/>
 </div>
 
 <br/>
@@ -90,16 +69,15 @@ I specialize in the bridge between raw neural architecture and production realit
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake-dark.svg" width="100%" />
   </picture>
 </div>
 
 ---
 
-### 🔭 Current Focus & Validations
+### 🔭 Current Focus
 
-- 🏗️ **Currently Building:** Expanding the multi-agent framework on `askmystack.space` to include memory-persistent, specialized sub-agents.
-- 📚 **Certifications:** AWS Certified AI Practitioner | Google Advanced Data Analytics | Red Hat (RH294/RH134).
+🏗️ **Building:** Expanding the multi-agent framework on `askmystack.space` — memory-persistent specialized sub-agents with cross-bot Kafka event triggering and Neo4j graph reasoning.
 
 <br/>
 
