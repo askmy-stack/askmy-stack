@@ -88,6 +88,20 @@ Notes I keep coming back to while building agent systems:
 
 🔎 Retrieval and grounding, and how RAG keeps evolving
 
+## 🎯 Good first issues
+
+If you want to contribute to the portfolio, these are good places to start in
+this profile repo:
+
+- [#3 Enable Dependabot on all Python and Node repos](https://github.com/askmy-stack/askmy-stack/issues/3)
+- [#9 Shared SECURITY.md template for API key and PII handling](https://github.com/askmy-stack/askmy-stack/issues/9)
+- [#16 Embed snake contribution graph SVG in profile README](https://github.com/askmy-stack/askmy-stack/issues/16)
+- [#17 Add repository description and GitHub topics](https://github.com/askmy-stack/askmy-stack/issues/17)
+- [#24 Cross-repo issue redirect template](https://github.com/askmy-stack/askmy-stack/issues/24)
+
+You can also browse the full
+[good first issue list](https://github.com/askmy-stack/askmy-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,5,20,30&height=120&section=footer" width="100%" />
 </div>
