@@ -1,0 +1,25 @@
+name: Sync Repository Labels
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/labels.yml"
+      - ".github/workflows/sync-labels.yml"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Sync labels from catalog
+        uses: crazy-max/ghaction-github-labeler@v5
+        with:
+          yaml-file: .github/labels.yml
+          skip-delete: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

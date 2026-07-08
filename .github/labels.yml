@@ -1,0 +1,43 @@
+- name: "priority:high"
+  color: "b60205"
+  description: "Critical / blocker"
+
+- name: "priority:medium"
+  color: "fbca04"
+  description: "Important improvement"
+
+- name: "priority:low"
+  color: "0e8a16"
+  description: "Nice to have"
+
+- name: "difficulty:beginner"
+  color: "c5def5"
+  description: "Half-day or less"
+
+- name: "difficulty:intermediate"
+  color: "bfd4f2"
+  description: "1-2 days"
+
+- name: "difficulty:advanced"
+  color: "5319e7"
+  description: "Multi-day or cross-repo work"
+
+- name: "category:documentation"
+  color: "0075ca"
+  description: "Documentation"
+
+- name: "category:security"
+  color: "d93f0b"
+  description: "Security"
+
+- name: "category:testing"
+  color: "1d76db"
+  description: "Testing"
+
+- name: "category:feature"
+  color: "a2eeef"
+  description: "Feature"
+
+- name: "category:maintenance"
+  color: "cfd3d7"
+  description: "Maintenance"
