@@ -1,0 +1,53 @@
+name: Wrong repository / redirect request
+description: Point contributors to the correct repository for a bug report or feature request.
+title: "[redirect]: "
+labels:
+  - "category:documentation"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening an issue.
+
+        This repository is the **GitHub profile repo** for `@askmy-stack`.
+        If your report belongs to one of the portfolio projects below, please
+        open it in the matching repository so it reaches the right codebase.
+
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Which repository is this about?
+      options:
+        - askmy-space
+        - cortex
+        - meridian
+        - Market-Pulse-MCP
+        - Autonomous-System-Kernel
+        - job-search-pipeline
+        - startupintel
+        - social-signal-pipeline
+        - featrank
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What are you trying to report?
+      description: Briefly describe the bug, feature request, or question.
+      placeholder: The issue belongs in cortex because...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Quick links:
+
+        - [askmy-space](https://github.com/askmy-stack/askmy-space)
+        - [cortex](https://github.com/askmy-stack/cortex)
+        - [meridian](https://github.com/askmy-stack/meridian)
+        - [Market-Pulse-MCP](https://github.com/askmy-stack/Market-Pulse-MCP)
+        - [Autonomous-System-Kernel](https://github.com/askmy-stack/Autonomous-System-Kernel)
+        - [job-search-pipeline](https://github.com/askmy-stack/job-search-pipeline)
