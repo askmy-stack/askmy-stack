@@ -19,6 +19,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/output/github-snake-dark.svg" alt="GitHub contribution snake animation" width="100%" />
+</div>
+
+<br/>
+
 ## 🧠 About
 
 I build AI systems that take machine learning from research into production. My work sits across agent infrastructure, knowledge graphs, and the automation that keeps data and model pipelines running on their own.
