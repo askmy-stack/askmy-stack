@@ -19,10 +19,6 @@
 
 <br/>
 
-## 🧠 About
-
-I build AI systems that take machine learning from research into production. My work sits across agent infrastructure, knowledge graphs, and the automation that keeps data and model pipelines running on their own.
-
 ## ⚡ What I work on
 
 🤖 Agentic AI systems with LLMs, retrieval, and the Model Context Protocol
@@ -56,37 +52,6 @@ Right now I am extending the multi agent framework behind [askmystack.space](htt
 <img src="https://img.shields.io/badge/MCP-native-0A7E8C?style=for-the-badge" />
 
 </div>
-
-## 🗺️ How my systems fit together
-
-A pattern runs through most of what I build: turn messy signals into a graph, reason over it, and let agents act on the result.
-
-```mermaid
-flowchart LR
-    A["Signals<br/>Slack, GitHub, Jira, news, AIS"] --> B["Extraction<br/>and ETL"]
-    B --> C[("Knowledge<br/>Graph")]
-    C --> D["Retrieval<br/>and reasoning"]
-    D --> E["LLM agents<br/>via MCP"]
-    E --> F["Decisions<br/>and automation"]
-    F -. "feedback" .-> C
-
-    classDef node fill:#0d1117,stroke:#58a6ff,stroke-width:1px,color:#c9d1d9;
-    class A,B,C,D,E,F node;
-```
-
-## 📚 What I am reading
-
-Notes I keep coming back to while building agent systems:
-
-📄 Foundational LLMs and text generation, from tokenization to inference
-
-📈 Chinchilla and compute optimal scaling for model and data size
-
-🧩 Agent architectures: extensions, functions, and data stores
-
-🔌 The Model Context Protocol and how agents reach tools and memory
-
-🔎 Retrieval and grounding, and how RAG keeps evolving
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,5,20,30&height=120&section=footer" width="100%" />
