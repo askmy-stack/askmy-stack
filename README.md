@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-dark.svg" alt="Parallax: the same claim viewed from two positions, with the drift between expectation and observation measured" width="100%" />
+<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-dark.svg" alt="Expectation vs observation: the system did what I meant, against the system did what it was told" width="100%" />
 
 # Abhinaysai Kamineni
 
