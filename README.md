@@ -1,10 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-light.svg" />
-  <img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-dark.svg" alt="Parallax: the same claim viewed from two positions, with the drift between expectation and observation measured" width="100%" />
-</picture>
+<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-dark.svg" alt="Parallax: the same claim viewed from two positions, with the drift between expectation and observation measured" width="100%" />
 
 # Abhinaysai Kamineni
 
