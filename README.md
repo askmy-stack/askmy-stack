@@ -27,7 +27,6 @@ Tools think. Agents act. Nothing remembers &mdash; and an agent that starts ever
 <a href="https://github.com/askmy-stack"><img src="https://img.shields.io/badge/GitHub-askmy--stack-1F2933?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="https://medium.com/@kamineniabhinaysai"><img src="https://img.shields.io/badge/Medium-Writing-1F2933?style=flat-square&logo=medium&logoColor=white" alt="Medium" /></a>
 <a href="https://huggingface.co/askhugsai"><img src="https://img.shields.io/badge/Hugging%20Face-Models%20and%20Spaces-1F2933?style=flat-square&logo=huggingface&logoColor=FFD21E" alt="Hugging Face" /></a>
-<a href="https://huggingface.co/spaces/askhugsai/nexus-forge"><img src="https://img.shields.io/badge/Live%20demo-nexus--forge-0D9488?style=flat-square&logo=gradio&logoColor=white" alt="Live demo: nexus-forge" /></a>
 
 </div>
 
