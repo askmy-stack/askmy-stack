@@ -65,15 +65,6 @@ Tools think. Agents act. Nothing remembers &mdash; and an agent that starts ever
 
 ---
 
-### &#128301; Current Focus
-
-**[cortex](https://github.com/askmy-stack/cortex)** &mdash; organizational memory for AI agents.<br/>
-**[parallax](https://github.com/askmy-stack/parallax)** &mdash; runtime reliability, diagnosis, and recovery.<br/>
-**[tool-semantics](https://github.com/askmy-stack/tool-semantics)** &mdash; behavioral compatibility for MCP tools.<br/>
-**[meridian](https://github.com/askmy-stack/meridian)** &mdash; supply chain risk from open signals.
-
----
-
 <div align="center">
 
 <sub>Capable agents must not only know how to act.<br/>
