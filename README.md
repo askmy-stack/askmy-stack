@@ -4,7 +4,7 @@
 
 # Abhinaysai Kamineni
 
-**AI and Infrastructure Engineer** &middot; agent memory, agent reliability, and the infrastructure underneath both
+**AI Engineer & Researcher** &middot; agent memory &middot; agent reliability
 
 </div>
 
@@ -12,9 +12,7 @@
 
 ### &#128161; The Perspective
 
-> *"Intelligence without strong infrastructure is merely a research experiment."*
-
-Tools think. Agents act. Nothing remembers &mdash; and an agent that starts every task from zero is an infrastructure failure, not a model failure. In optics, parallax is the apparent shift of an object viewed from two positions; in agent systems it is the gap between what a system was expected to do and what it observably did. When expectation and observation diverge, reliability is already failing, so I build for honest calibration over false precision.
+> *"Intelligence without strong infrastructure and right design is merely a research experiment."*
 
 ---
 
@@ -63,14 +61,3 @@ Tools think. Agents act. Nothing remembers &mdash; and an agent that starts ever
 </div>
 
 ---
-
-<div align="center">
-
-<sub>Capable agents must not only know how to act.<br/>
-They must recognize when their assumptions are failing &mdash; and choose when to retry, adapt, ask for help, or stop.</sub>
-
-<br/><br/>
-
-**[askmystack.space](https://askmystack.space)** &middot; **[LinkedIn](https://linkedin.com/in/abhinaysai-kamineni)**
-
-</div>
