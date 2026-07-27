@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" width="880" height="280" role="img" aria-label="Parallax: the same claim viewed from two positions, with the drift between expectation and observation measured">
+  <title>The parallax gap between expectation and observation</title>
+
+  <rect x="0.5" y="0.5" width="879" height="279" rx="14" fill="#0B1220" stroke="#1E2A3A" stroke-width="1"/>
+
+  <text x="48" y="52" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="2.4">PARALLAX &#8212; THE APPARENT SHIFT OF AN OBJECT VIEWED FROM TWO POSITIONS</text>
+
+  <text x="48" y="126" fill="#4FC3E8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.8">EXPECTATION</text>
+  <text x="196" y="132" fill="#E6EDF6" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600" letter-spacing="-0.4">the system did what I meant</text>
+
+  <line x1="196" y1="142" x2="196" y2="178" stroke="#33455C" stroke-width="1" stroke-dasharray="2 4"/>
+  <line x1="244" y1="142" x2="244" y2="178" stroke="#33455C" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <text x="220" y="156" fill="#F5A524" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="600">&#916;</text>
+  <line x1="196" y1="164" x2="244" y2="164" stroke="#F5A524" stroke-width="1.5"/>
+  <line x1="196" y1="159" x2="196" y2="169" stroke="#F5A524" stroke-width="1.5"/>
+  <line x1="244" y1="159" x2="244" y2="169" stroke="#F5A524" stroke-width="1.5"/>
+
+  <text x="48" y="198" fill="#A78BFA" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.8">OBSERVATION</text>
+  <text x="244" y="204" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600" letter-spacing="-0.4">the system did what I meant</text>
+
+  <line x1="48" y1="228" x2="832" y2="228" stroke="#1E2A3A" stroke-width="1"/>
+  <text x="48" y="252" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.8">WHEN EXPECTATION AND OBSERVATION DIVERGE, RELIABILITY IS ALREADY FAILING</text>
+</svg>

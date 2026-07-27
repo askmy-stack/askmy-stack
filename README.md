@@ -1,54 +1,56 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/perspective-dark.svg" alt="Parallax: the same claim viewed from two positions, with the drift between expectation and observation measured" width="100%" />
+
 # Abhinaysai Kamineni
 
-### AI and Infrastructure Engineer
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1100&color=58A6FF&center=true&vCenter=true&width=700&lines=Building+agentic+AI+systems+with+LLMs+and+MCP;Knowledge+graphs+that+give+agents+real+memory;Streaming+pipelines+from+ingestion+to+deployment;Turning+research+into+production+software" alt="What I build" />
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="460" alt="Engineering animation" />
+**AI and Infrastructure Engineer** &middot; building the systems that let agents remember, and the instruments that catch them when they drift
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="" />
+---
 
-## Who I am
+### &#128161; The Perspective
 
-I am an AI and infrastructure engineer who builds machine learning systems that survive contact with production. My work centers on agentic systems: giving language models durable memory, reliable tool interfaces, and the streaming infrastructure that keeps them grounded in real data.
+> *"Intelligence without strong infrastructure is merely a research experiment."*
 
-Most of what I ship starts as a research question and ends as a deployed service with tests, telemetry, and an API someone else can call. I care more about systems that fail loudly and recover well than about demos that look good once.
+That belief is why my work sits underneath models rather than on top of them. Tools think. Agents act. Nothing remembers &mdash; and an agent that starts every task from zero is a memory infrastructure failure, not a model failure. The problems I find interesting are not in the weights. They are in the graph that holds what an organization already decided, the stream that keeps that graph current, and the tool contract an agent quietly depends on every time it acts.
+
+The other half of the work is knowing when the system is wrong. In optics, parallax is the apparent shift of an object when viewed from two positions. In agent systems the same shift appears as a gap between what a system was expected to do and what it observably did, and when expectation and observation diverge, reliability is already failing. So I build for honest calibration over false precision, and for agents that recognize when their assumptions are failing instead of retrying confidently into a wall.
+
+---
+
+### &#128279; Find me online
 
 <div align="center">
 
-## Find me online
-
-<a href="https://askmystack.space"><img src="https://img.shields.io/badge/Portfolio-askmystack.space-58a6ff?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-<a href="https://linkedin.com/in/abhinaysai-kamineni"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/askmy-stack"><img src="https://img.shields.io/badge/GitHub-askmy--stack-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<br/>
-<a href="https://medium.com/@kamineniabhinaysai"><img src="https://img.shields.io/badge/Medium-Writing-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
-<a href="https://huggingface.co/askhugsai"><img src="https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" /></a>
-<a href="https://huggingface.co/spaces/askhugsai/nexus-forge"><img src="https://img.shields.io/badge/Live%20demo-nexus--forge-0A7E8C?style=for-the-badge&logo=gradio&logoColor=white" alt="Live demo" /></a>
+<a href="https://askmystack.space"><img src="https://img.shields.io/badge/Portfolio-askmystack.space-1F2933?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+<a href="https://linkedin.com/in/abhinaysai-kamineni"><img src="https://img.shields.io/badge/LinkedIn-Connect-1F2933?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://github.com/askmy-stack"><img src="https://img.shields.io/badge/GitHub-askmy--stack-1F2933?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://medium.com/@kamineniabhinaysai"><img src="https://img.shields.io/badge/Medium-Writing-1F2933?style=flat-square&logo=medium&logoColor=white" alt="Medium" /></a>
+<a href="https://huggingface.co/askhugsai"><img src="https://img.shields.io/badge/Hugging%20Face-Models%20and%20Spaces-1F2933?style=flat-square&logo=huggingface&logoColor=FFD21E" alt="Hugging Face" /></a>
+<a href="https://huggingface.co/spaces/askhugsai/nexus-forge"><img src="https://img.shields.io/badge/Live%20demo-nexus--forge-0D9488?style=flat-square&logo=gradio&logoColor=white" alt="Live demo: nexus-forge" /></a>
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="" />
+---
+
+### &#9889; What I Do
+
+- **&#129504; Agent memory:** Decision capture through Kafka into a Neo4j knowledge graph, served back over MCP so context is injected at inference time instead of re-explained in every prompt.
+- **&#128737;&#65039; Agent reliability:** Runtime detection of degradation before a task visibly fails, behavioral compatibility testing for tool interfaces, and recovery policies chosen deliberately rather than retried blindly.
+- **&#128225; Decision intelligence from noisy signals:** Geopolitical, shipping, and weather feeds resolved into a queryable graph with calibrated risk bands and explicit uncertainty, never a false point estimate.
+- **&#128300; Applied deep learning:** Pipelines for 3D biomedical imaging and long-horizon time series, including hundreds of hours of clinical EEG, built to be rerun and audited rather than demoed once.
+
+---
+
+### &#128736;&#65039; The Tech Ecosystem
 
 <div align="center">
 
-## Tech stack
-
-**Languages, ML and serving**
-
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,go,cpp,bash,linux&theme=dark&perline=8" alt="Languages and ML" />
-
-**Data and streaming**
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,go,cpp,bash,linux&theme=dark&perline=8" alt="Languages, ML and serving" />
 
 <img src="https://skillicons.dev/icons?i=kafka,postgres,redis,mongodb,mysql,sqlite,rabbitmq&theme=dark&perline=7" alt="Data and streaming" />
-
-**Cloud and operations**
 
 <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,grafana,prometheus,git,github&theme=dark&perline=8" alt="Cloud and operations" />
 
@@ -58,27 +60,42 @@ Most of what I ship starts as a research question and ends as a deployed service
 <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow" />
 <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" />
 <img src="https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic" />
-<img src="https://img.shields.io/badge/MCP-native-0A7E8C?style=flat-square" alt="MCP" />
+<img src="https://img.shields.io/badge/MCP-native-0D9488?style=flat-square" alt="MCP native" />
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="" />
+---
 
-## What I am working on
+### &#128301; Current Focus
 
-**[cortex](https://github.com/askmy-stack/cortex)** — Organizational memory for AI agents. Captures decisions into a Neo4j knowledge graph and serves them back over MCP so agents stop re-litigating settled questions.
+**[cortex](https://github.com/askmy-stack/cortex)** &mdash; Organizational memory for AI agents: decisions captured into a Neo4j graph and injected back through MCP so agents stop re-litigating settled questions.
 
-**[parallax](https://github.com/askmy-stack/parallax)** — Runtime reliability for autonomous agents. Detects when an agent is degrading before the task visibly fails, then picks a recovery policy instead of retrying forever.
+**[parallax](https://github.com/askmy-stack/parallax)** &mdash; Runtime reliability for autonomous agents: detect degradation before the task visibly fails, diagnose the cause, then choose a recovery policy.
 
-**[tool-semantics](https://github.com/askmy-stack/tool-semantics)** — Behavioral compatibility testing for MCP tools. Catches the changes that keep the schema valid but quietly break the agent using it.
+**[tool-semantics](https://github.com/askmy-stack/tool-semantics)** &mdash; Behavioral compatibility testing for MCP tools, catching the changes that keep the schema valid but quietly break the agent using it.
 
-**[meridian](https://github.com/askmy-stack/meridian)** — Supply chain risk intelligence built from geopolitical signals and live AIS vessel tracking, resolved into a queryable graph.
+**[meridian](https://github.com/askmy-stack/meridian)** &mdash; Supply chain risk intelligence built from geopolitical and shipping signals, resolved into a graph with calibrated risk bands.
+
+---
+
+### &#129517; Principles
+
+- **Expose uncertainty.** A band with an honest label beats a confident number nobody can audit.
+- **Test behavior, not just schema.** A change can stay JSON-Schema-valid and still steer a model to the wrong tool.
+- **Memory needs provenance.** Anything an agent recalls has to carry where it came from and what contradicts it.
+- **Benchmarks must reproduce failure.** A harness that cannot fail on demand cannot prove recovery.
+- **Research has to survive contact with a product.** Tests, telemetry, and an API someone else can call, or it did not ship.
+
+---
 
 <div align="center">
 
-<br/>
+<sub>Capable agents must not only know how to act.<br/>
+They must recognize when their assumptions are failing &mdash; and choose when to retry, adapt, ask for help, or stop.</sub>
 
-**[askmystack.space](https://askmystack.space)** · **[LinkedIn](https://linkedin.com/in/abhinaysai-kamineni)**
+<br/><br/>
+
+**[askmystack.space](https://askmystack.space)** &middot; **[LinkedIn](https://linkedin.com/in/abhinaysai-kamineni)**
 
 </div>
