@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 WIDTH = 900
 HEIGHT = 340
 FPS = 12
-FRAME_COUNT = 168
+FRAME_COUNT = 216
 DURATION_MS = round(1000 / FPS)
 FRAME_DURATIONS = tuple(90 if index % 3 == 2 else 80 for index in range(FRAME_COUNT))
 
@@ -63,6 +63,7 @@ FONT_16 = _font(16)
 FONT_18 = _font(18)
 FONT_20 = _font(20)
 FONT_28 = _font(28)
+FONT_30 = _font(30)
 
 
 def _clamp(value: float, low: float = 0.0, high: float = 1.0) -> float:
@@ -76,6 +77,11 @@ def _ease(value: float) -> float:
 
 def _segment(t: float, start: float, end: float) -> float:
     return _ease((t - start) / (end - start))
+
+
+def _reveal(value: float) -> float:
+    """Complete motion early so every scene has a calm reading hold."""
+    return _ease(_clamp(value / 0.38))
 
 
 def _center_text(draw: ImageDraw.ImageDraw, y: int, text: str, font, fill, stroke_width: int = 0) -> None:
@@ -130,19 +136,17 @@ def _make_base() -> Image.Image:
         shade = rng.choice((COLORS["muted"], COLORS["violet"], COLORS["cyan"], COLORS["warm"]))
         draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=shade)
 
-    # Floating cabinet and glass viewport.
-    draw.rounded_rectangle((18, 15, 882, 325), radius=22, fill="#090D1C", outline="#43507D", width=2)
-    draw.rounded_rectangle((28, 25, 872, 315), radius=17, fill=COLORS["panel"], outline="#222C50", width=2)
+    # A single quiet console frame keeps attention inside the signal field.
+    draw.rounded_rectangle((18, 15, 882, 325), radius=22, fill=COLORS["panel"], outline="#43507D", width=2)
     draw.rounded_rectangle(SCREEN, radius=12, fill="#070B17", outline="#3B4770", width=2)
-    draw.line((48, 51, 852, 51), fill="#303B65", width=1)
-    draw.text((54, 31), "LIGHT STUDY // SPECTRUM", font=FONT_14, fill=COLORS["warm"])
-    draw.text((752, 33), "LOOP/014", font=FONT_12, fill=COLORS["muted"])
+    draw.text((54, 31), "AI SYSTEMS // SIGNAL SPECTRUM", font=FONT_14, fill=COLORS["warm"])
+    draw.text((750, 33), "SEQUENCE / 08", font=FONT_12, fill=COLORS["muted"])
 
     # Cabinet controls double as a visual legend.
     for x, color in ((58, COLORS["cyan"]), (76, COLORS["violet"]), (94, COLORS["amber"]), (112, COLORS["green"])):
         draw.ellipse((x, 295, x + 8, 303), fill=color)
-    draw.text((132, 292), "PREDICT  DELIVER  ANCHOR  EXAMINE  ORCHESTRATE", font=FONT_12, fill=COLORS["muted"])
-    draw.text((754, 292), "LOOP: READY", font=FONT_12, fill=COLORS["cyan"])
+    draw.text((132, 292), "SIGNAL  CONTEXT  EXECUTION  AUTONOMY", font=FONT_12, fill=COLORS["muted"])
+    draw.text((714, 292), "STATUS: COHERENT", font=FONT_12, fill=COLORS["cyan"])
     return image
 
 
@@ -158,38 +162,38 @@ def _scene_label(draw: ImageDraw.ImageDraw, label: str, color: str, sublabel: st
 
 def _draw_model(image: Image.Image, p: float, frame: int) -> None:
     draw = ImageDraw.Draw(image)
-    _center_text(draw, 98, "MODELS PREDICT.", FONT_28, COLORS["warm"])
-    _center_text(draw, 137, "A SIGNAL BECOMES A POSSIBILITY", FONT_14, COLORS["muted"])
-    points = [(180, 190), (315, 163), (450, 184), (585, 148), (720, 181)]
+    _center_text(draw, 85, "MODELS PREDICT.", FONT_30, COLORS["warm"], stroke_width=1)
+    _center_text(draw, 124, "A SIGNAL BECOMES A POSSIBILITY", FONT_14, COLORS["muted"])
+    points = [(180, 220), (315, 190), (450, 218), (585, 181), (720, 214)]
     for index in range(len(points) - 1):
         _glow_line(image, points[index : index + 2], COLORS["cyan"], 2)
     for index, point in enumerate(points):
         _glow_dot(image, point, 5 + int(3 * p), (COLORS["cyan"], COLORS["violet"], COLORS["amber"])[index % 3])
-    draw.line((156, 215, 744, 215), fill="#334064", width=1)
-    draw.text((364, 223), "POSSIBILITY FIELD", font=FONT_14, fill=COLORS["muted"])
+    draw.line((156, 246, 744, 246), fill="#334064", width=1)
+    draw.text((364, 251), "POSSIBILITY FIELD", font=FONT_12, fill=COLORS["muted"])
 
 
 def _draw_agents(image: Image.Image, p: float, frame: int) -> None:
     draw = ImageDraw.Draw(image)
-    _center_text(draw, 98, "AGENTS DELIVER.", FONT_28, COLORS["cyan"])
-    _center_text(draw, 137, "A POSSIBILITY BECOMES A MOVE", FONT_14, COLORS["muted"])
+    _center_text(draw, 85, "AGENTS DELIVER.", FONT_30, COLORS["cyan"], stroke_width=1)
+    _center_text(draw, 124, "A POSSIBILITY BECOMES A MOVE", FONT_14, COLORS["muted"])
     gates = ((220, COLORS["cyan"]), (450, COLORS["violet"]), (680, COLORS["amber"]))
     for x, color in gates:
-        draw.polygon(((x - 28, 143), (x + 28, 172), (x - 28, 201)), outline=color, fill="#11172F")
-        draw.line((x - 18, 172, x + 18, 172), fill=color, width=2)
+        draw.polygon(((x - 25, 176), (x + 25, 204), (x - 25, 232)), outline=color, fill="#11172F")
+        draw.line((x - 17, 204, x + 17, 204), fill=color, width=2)
     path_x = 160 + 580 * _ease(p)
-    _glow_line(image, [(150, 172), (750, 172)], COLORS["cyan"], 2)
-    _glow_dot(image, (path_x, 172), 8, COLORS["warm"])
+    _glow_line(image, [(150, 204), (750, 204)], COLORS["cyan"], 2)
+    _glow_dot(image, (path_x, 204), 8, COLORS["warm"])
     for index, (x, color) in enumerate(gates):
-        draw.text((x - 22, 218), f"STEP {index + 1}", font=FONT_12, fill=color)
+        draw.text((x - 22, 244), f"STEP {index + 1}", font=FONT_12, fill=color)
 
 
 def _draw_context(image: Image.Image, p: float, frame: int) -> None:
     draw = ImageDraw.Draw(image)
-    _center_text(draw, 98, "SYSTEMS ANCHOR CONTEXT.", FONT_28, COLORS["violet"])
-    _center_text(draw, 137, "THE THREAD CONTINUES BETWEEN MOMENTS", FONT_14, COLORS["muted"])
-    center = (450, 177)
-    for orbit, (rx, ry) in enumerate(((75, 34), (135, 60), (195, 86))):
+    _center_text(draw, 85, "SYSTEMS ANCHOR CONTEXT.", FONT_30, COLORS["violet"], stroke_width=1)
+    _center_text(draw, 124, "THE THREAD CONTINUES BETWEEN MOMENTS", FONT_14, COLORS["muted"])
+    center = (450, 211)
+    for orbit, (rx, ry) in enumerate(((70, 18), (130, 29), (190, 40))):
         draw.ellipse((center[0] - rx, center[1] - ry, center[0] + rx, center[1] + ry), outline="#3A3565", width=2)
         angle = frame * (0.04 - orbit * 0.008) + orbit * 1.7
         x = center[0] + math.cos(angle) * rx
@@ -204,7 +208,7 @@ def _draw_context(image: Image.Image, p: float, frame: int) -> None:
 
 def _pixel_ray(draw: ImageDraw.ImageDraw, start: tuple[float, float], end: tuple[float, float], color: str, progress: float, seed: int, scatter: float = 0.0) -> None:
     rng = random.Random(seed)
-    steps = 16
+    steps = 9
     for index in range(steps):
         fraction = (index + 1) / steps * _clamp(progress)
         x = start[0] + (end[0] - start[0]) * fraction
@@ -214,61 +218,58 @@ def _pixel_ray(draw: ImageDraw.ImageDraw, start: tuple[float, float], end: tuple
         draw.rectangle((x - size, y - size, x + size, y + size), fill=color)
 
 
-def primitive_grid(draw: ImageDraw.ImageDraw, progress: float, frame: int) -> None:
-    """Show the small components beneath a failed abstraction."""
-    alpha = int(55 + 90 * _clamp(progress))
-    for column in range(9):
-        x = 238 + column * 53
-        draw.line((x, 124, x + math.sin(frame * 0.04 + column) * 8, 224), fill=(86, 102, 158, alpha), width=1)
-    for row in range(4):
-        y = 132 + row * 28
-        draw.line((220, y, 680, y + math.sin(frame * 0.03 + row) * 5), fill=(86, 102, 158, alpha), width=1)
-    for column in range(8):
-        for row in range(3):
-            x = 264 + column * 53
-            y = 144 + row * 28
-            draw.rectangle((x - 2, y - 2, x + 2, y + 2), fill=COLORS["coral"] if (column + row + frame) % 7 == 0 else COLORS["muted"])
+def primitive_nodes(draw: ImageDraw.ImageDraw, progress: float, frame: int) -> None:
+    """Reveal isolated structural nodes without a full-height grid."""
+    visible = max(1, round(6 * _clamp(progress)))
+    nodes = ((265, 220), (320, 192), (366, 234), (534, 190), (586, 225), (642, 201))
+    for index, (x, y) in enumerate(nodes[:visible]):
+        color = (COLORS["cyan"], COLORS["violet"], COLORS["amber"])[index % 3]
+        size = 5 if index % 2 else 7
+        draw.rectangle((x - size, y - size, x + size, y + size), outline=color, width=2)
+        if index > 0:
+            previous = nodes[index - 1]
+            draw.line((previous[0], previous[1], x, y), fill="#39466E", width=1)
 
 
 def _draw_execution(image: Image.Image, p: float, frame: int) -> None:
     draw = ImageDraw.Draw(image)
-    source = (168, 178)
-    prism_center = (450, 178)
-    prism = ((405, 122), (495, 178), (405, 234))
+    source = (158, 210)
+    prism_center = (450, 210)
+    prism = ((405, 169), (475, 210), (405, 251))
     _glow_line(image, [source, prism_center], COLORS["cyan"], 4)
     draw.polygon(prism, fill="#101A35", outline=COLORS["warm"])
-    draw.line((405, 122, 405, 234), fill=COLORS["violet"], width=2)
-    for index, (color, endpoint) in enumerate(((COLORS["cyan"], (740, 138)), (COLORS["violet"], (748, 178)), (COLORS["amber"], (740, 218)))):
+    draw.line((405, 169, 405, 251), fill=COLORS["violet"], width=2)
+    for index, (color, endpoint) in enumerate(((COLORS["cyan"], (740, 184)), (COLORS["violet"], (748, 210)), (COLORS["amber"], (740, 236)))):
         _glow_line(image, [prism_center, endpoint], color, 2)
         _pixel_ray(draw, prism_center, endpoint, color, p, 200 + index, scatter=6)
     _glow_dot(image, source, 6, COLORS["cyan"])
-    _center_text(draw, 98, "EXECUTION REVEALS THE TRUTH.", FONT_28, COLORS["amber"])
-    _center_text(draw, 137, "A BEAM LEAVES THE MODEL", FONT_14, COLORS["muted"])
+    _center_text(draw, 85, "EXECUTION REVEALS THE TRUTH.", FONT_30, COLORS["amber"], stroke_width=1)
+    _center_text(draw, 124, "A BEAM LEAVES THE MODEL", FONT_14, COLORS["muted"])
 
 
 def _draw_prism(image: Image.Image, p: float, frame: int, complexity: bool = False) -> None:
     draw = ImageDraw.Draw(image)
-    source = (168, 178)
-    prism_center = (450, 178)
-    prism = ((405, 122), (495, 178), (405, 234))
+    source = (158, 210)
+    prism_center = (450, 210)
+    prism = ((405, 169), (475, 210), (405, 251))
     _glow_line(image, [source, prism_center], COLORS["cyan"], 4)
     draw.polygon(prism, fill="#101A35", outline=COLORS["warm"])
-    draw.line((405, 122, 405, 234), fill=COLORS["violet"], width=2)
-    draw.line((405, 122, 495, 178), fill=COLORS["cyan"], width=1)
-    draw.line((405, 234, 495, 178), fill=COLORS["amber"], width=1)
-    rays = ((COLORS["cyan"], (740, 128)), (COLORS["violet"], (748, 178)), (COLORS["amber"], (740, 228)))
+    draw.line((405, 169, 405, 251), fill=COLORS["violet"], width=2)
+    draw.line((405, 169, 475, 210), fill=COLORS["cyan"], width=1)
+    draw.line((405, 251, 475, 210), fill=COLORS["amber"], width=1)
+    rays = ((COLORS["cyan"], (740, 180)), (COLORS["violet"], (748, 210)), (COLORS["amber"], (740, 240)))
     for index, (color, endpoint) in enumerate(rays):
         end = (prism_center[0] + (endpoint[0] - prism_center[0]) * _ease(p), prism_center[1] + (endpoint[1] - prism_center[1]) * _ease(p))
         _glow_line(image, [prism_center, end], color, 2)
-        _pixel_ray(draw, prism_center, endpoint, color, p, 300 + index, scatter=34 if complexity else 12)
+        _pixel_ray(draw, prism_center, endpoint, color, p, 300 + index, scatter=22 if complexity else 8)
     _glow_dot(image, source, 6, COLORS["cyan"])
     if complexity:
-        primitive_grid(draw, p, frame)
-        _center_text(draw, 91, "WHEN COMPLEXITY BLINDS,", FONT_28, COLORS["amber"])
-        _center_text(draw, 126, "ISOLATE THE ARCHITECTURE.", FONT_28, COLORS["warm"])
+        primitive_nodes(draw, p, frame)
+        _center_text(draw, 78, "WHEN COMPLEXITY BLINDS,", FONT_30, COLORS["amber"], stroke_width=1)
+        _center_text(draw, 116, "ISOLATE THE ARCHITECTURE.", FONT_30, COLORS["warm"], stroke_width=1)
     else:
-        _center_text(draw, 91, "WHEN ABSTRACTIONS LEAK,", FONT_28, COLORS["coral"])
-        _center_text(draw, 126, "EXAMINE THE PRIMITIVES.", FONT_28, COLORS["warm"])
+        _center_text(draw, 78, "WHEN ABSTRACTIONS LEAK,", FONT_30, COLORS["coral"], stroke_width=1)
+        _center_text(draw, 116, "EXAMINE THE PRIMITIVES.", FONT_30, COLORS["warm"], stroke_width=1)
 
 
 
@@ -286,17 +287,17 @@ def _infinity_points(progress: float, samples: int = 90) -> list[tuple[float, fl
 
 def _draw_orchestration(image: Image.Image, p: float, frame: int) -> None:
     draw = ImageDraw.Draw(image)
-    _center_text(draw, 98, "ORCHESTRATION IS THE PULSE.", FONT_28, COLORS["green"])
-    _center_text(draw, 137, "MANY SIGNALS. ONE CONTINUOUS MOTION.", FONT_14, COLORS["muted"])
-    center = (450, 178)
-    sources = ((175, 135, COLORS["cyan"]), (175, 220, COLORS["violet"]), (725, 135, COLORS["amber"]), (725, 220, COLORS["coral"]))
+    _center_text(draw, 85, "ORCHESTRATION IS THE PULSE.", FONT_30, COLORS["green"], stroke_width=1)
+    _center_text(draw, 124, "MANY SIGNALS. ONE CONTINUOUS MOTION.", FONT_14, COLORS["muted"])
+    center = (450, 211)
+    sources = ((175, 180, COLORS["cyan"]), (175, 238, COLORS["violet"]), (725, 180, COLORS["amber"]), (725, 238, COLORS["coral"]))
     for index, (x, y, color) in enumerate(sources):
         _glow_line(image, [(x, y), center], color, 2)
         progress = _clamp(p * 1.4 - index * 0.12)
         _pixel_ray(draw, (x, y), center, color, progress, 600 + index, scatter=12)
     pulse_x = 160 + 580 * ((frame % 28) / 27)
-    _glow_line(image, [(150, 178), (750, 178)], COLORS["green"], 4)
-    _glow_dot(image, (pulse_x, 178), 8, COLORS["warm"])
+    _glow_line(image, [(150, 211), (750, 211)], COLORS["green"], 4)
+    _glow_dot(image, (pulse_x, 211), 8, COLORS["warm"])
     draw.ellipse((center[0] - 22, center[1] - 22, center[0] + 22, center[1] + 22), outline=COLORS["green"], width=2)
     draw.line((center[0] - 14, center[1], center[0] + 14, center[1]), fill=COLORS["green"], width=2)
     draw.line((center[0], center[1] - 14, center[0], center[1] + 14), fill=COLORS["green"], width=2)
@@ -304,29 +305,21 @@ def _draw_orchestration(image: Image.Image, p: float, frame: int) -> None:
 
 def _draw_final(image: Image.Image, p: float) -> None:
     draw = ImageDraw.Draw(image)
-    points = [(x, 205 + (y - 171) * 0.58) for x, y in _infinity_points(1.0)]
+    points = [(x, 216 + (y - 171) * 0.42) for x, y in _infinity_points(1.0)]
     _glow_line(image, points, COLORS["green"], 3)
     veil = Image.new("RGBA", image.size, (8, 11, 24, int(155 * _ease(p))))
     image.alpha_composite(veil)
     draw = ImageDraw.Draw(image)
-    _center_text(draw, 91, "AUTONOMY IS THE ENDGAME.", FONT_28, COLORS["warm"])
-    _center_text(draw, 132, "INTELLIGENCE BECOMES SYSTEMIC.", FONT_28, COLORS["cyan"])
-    _center_text(draw, 244, "PREDICT / DELIVER / ANCHOR / EXAMINE / ORCHESTRATE", FONT_14, COLORS["muted"])
+    _center_text(draw, 78, "AUTONOMY IS THE ENDGAME.", FONT_30, COLORS["warm"], stroke_width=1)
+    _center_text(draw, 116, "INTELLIGENCE BECOMES SYSTEMIC.", FONT_30, COLORS["cyan"], stroke_width=1)
+    _center_text(draw, 249, "PREDICT / DELIVER / ANCHOR / EXAMINE / ORCHESTRATE", FONT_12, COLORS["muted"])
 
 
 def _add_crt(image: Image.Image, frame: int) -> None:
     draw = ImageDraw.Draw(image, "RGBA")
-    for y in range(SCREEN[1] + 2, SCREEN[3] - 1, 4):
-        draw.line((SCREEN[0] + 2, y, SCREEN[2] - 2, y), fill=(0, 0, 0, 25), width=1)
-    sweep_y = SCREEN[1] + ((frame * 3) % (SCREEN[3] - SCREEN[1]))
-    draw.line((SCREEN[0] + 3, sweep_y, SCREEN[2] - 3, sweep_y), fill=(88, 230, 255, 9), width=1)
-    # Soft glass reflection.
-    reflection = Image.new("RGBA", image.size, (0, 0, 0, 0))
-    ImageDraw.Draw(reflection).polygon(
-        ((63, 73), (320, 73), (190, 267), (63, 267)),
-        fill=(255, 255, 255, 7),
-    )
-    image.alpha_composite(reflection)
+    # Texture begins below the protected text zone and never crosses copy.
+    for y in range(164, SCREEN[3] - 1, 5):
+        draw.line((SCREEN[0] + 2, y, SCREEN[2] - 2, y), fill=(0, 0, 0, 18), width=1)
 
 
 def render_frame(frame: int) -> Image.Image:
@@ -334,19 +327,19 @@ def render_frame(frame: int) -> Image.Image:
     t = frame / (FRAME_COUNT - 1)
 
     if t < 0.10:
-        _draw_model(image, _segment(t, 0.0, 0.10), frame)
+        _draw_model(image, _reveal(_segment(t, 0.0, 0.10)), frame)
     elif t < 0.20:
-        _draw_agents(image, _segment(t, 0.10, 0.20), frame)
+        _draw_agents(image, _reveal(_segment(t, 0.10, 0.20)), frame)
     elif t < 0.32:
-        _draw_context(image, _segment(t, 0.20, 0.32), frame)
+        _draw_context(image, _reveal(_segment(t, 0.20, 0.32)), frame)
     elif t < 0.45:
-        _draw_execution(image, _segment(t, 0.32, 0.45), frame)
+        _draw_execution(image, _reveal(_segment(t, 0.32, 0.45)), frame)
     elif t < 0.59:
-        _draw_prism(image, _segment(t, 0.45, 0.59), frame, complexity=False)
+        _draw_prism(image, _reveal(_segment(t, 0.45, 0.59)), frame, complexity=False)
     elif t < 0.72:
-        _draw_prism(image, _segment(t, 0.59, 0.72), frame, complexity=True)
+        _draw_prism(image, _reveal(_segment(t, 0.59, 0.72)), frame, complexity=True)
     elif t < 0.83:
-        _draw_orchestration(image, _segment(t, 0.72, 0.83), frame)
+        _draw_orchestration(image, _reveal(_segment(t, 0.72, 0.83)), frame)
     else:
         _draw_final(image, _segment(t, 0.83, 0.94))
         if t > 0.975:
@@ -377,7 +370,7 @@ def render(output_gif: Path = DEFAULT_GIF, output_poster: Path = DEFAULT_POSTER)
 
     frames = [render_frame(index) for index in range(FRAME_COUNT)]
     frames[-1] = frames[0].copy()
-    frames[108].save(output_poster, format="PNG", optimize=True)
+    frames[143].save(output_poster, format="PNG", optimize=True)
 
     palette = _global_palette(frames)
     indexed = [frame.quantize(palette=palette, dither=Image.Dither.NONE) for frame in frames]
