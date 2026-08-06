@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/the-impossible-loop.gif" alt="A retro-futuristic arcade journey where an intelligent system observes, remembers, reasons, verifies, encounters an anomaly, and recovers" width="100%" />
+<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/the-impossible-loop.gif" alt="A retro-futuristic prism refracting pixel light through prediction, delivery, context, execution, primitives, orchestration, and autonomy" width="100%" />
 
 # Abhinaysai Kamineni
 
