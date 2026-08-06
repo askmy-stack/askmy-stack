@@ -87,16 +87,16 @@ Expected: all tests pass, the asset is below 5 MB, and the diff is whitespace-cl
 - Consumes: verified renderer, assets, and tests from Tasks 1–2.
 - Produces: pushed branch and draft PR targeting `main`.
 
-- [ ] **Step 1: Review the scoped diff and mark the plan complete**
+- [x] **Step 1: Review the scoped diff and mark the plan complete**
 
 Run: `git status --short --branch && git diff --check && git diff --stat origin/main...HEAD`.
 
-- [ ] **Step 2: Commit and run the final tests**
+- [x] **Step 2: Commit and run the final tests**
 
 Commit message: `Refine profile GIF with prism pixel rays`.
 
 Run: `python3 -m unittest discover -s tests -v`.
 
-- [ ] **Step 3: Push and open a draft PR**
+- [x] **Step 3: Push and open a draft PR**
 
 Push `agent/prism-pixel-rays-hero` and open a draft PR titled `Refine profile GIF with prism pixel rays`, describing the copy, pacing, Prism-Core artwork, and validation results.
