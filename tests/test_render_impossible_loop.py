@@ -25,30 +25,30 @@ class ImpossibleLoopRendererTests(unittest.TestCase):
 
         self.assertEqual((renderer.WIDTH, renderer.HEIGHT), (900, 340))
         self.assertEqual(renderer.FPS, 12)
-        self.assertEqual(renderer.FRAME_COUNT, 120)
+        self.assertEqual(renderer.FRAME_COUNT, 168)
         self.assertLessEqual(renderer.DURATION_MS, 84)
-        self.assertEqual(sum(renderer.FRAME_DURATIONS), 10_000)
+        self.assertEqual(sum(renderer.FRAME_DURATIONS), 14_000)
         self.assertTrue(renderer.FONT_PATH.exists())
 
         copy = "\n".join(renderer.COPY)
         for phrase in (
-            "THE IMPOSSIBLE LOOP",
-            "INSERT CONTEXT",
-            "OBSERVE",
-            "MEMORY ONLINE",
-            "REASON",
-            "EXPECTED",
-            "OBSERVED",
-            "DIFFERENCE",
-            "UNEXPECTED != UNRECOVERABLE",
-            "RECOVERY 1UP",
-            "INTELLIGENCE STARTS THE LOOP.",
-            "RELIABLE SYSTEMS KEEP IT ALIVE.",
+            "MODELS PREDICT.",
+            "AGENTS DELIVER.",
+            "SYSTEMS ANCHOR CONTEXT.",
+            "EXECUTION REVEALS THE TRUTH.",
+            "WHEN ABSTRACTIONS LEAK,",
+            "EXAMINE THE PRIMITIVES.",
+            "WHEN COMPLEXITY BLINDS,",
+            "ISOLATE THE ARCHITECTURE.",
+            "ORCHESTRATION IS THE PULSE.",
+            "AUTONOMY IS THE ENDGAME.",
         ):
             self.assertIn(phrase, copy)
 
         source = RENDERER_PATH.read_text(encoding="utf-8").lower()
-        for forbidden in ("ask my stack", "askmy-stack", "cortex", "myelinmesh", "parallax", "meridian", "repository"):
+        for required in ("prism", "pixel", "ray", "primitive_grid"):
+            self.assertIn(required, source)
+        for forbidden in ("ask my stack", "askmy-stack", "cortex", "myelinmesh", "parallax", "meridian", "repository", "system/2086", "prism-core", "sad face", "emoji"):
             self.assertNotIn(forbidden, copy.lower())
             self.assertNotIn(forbidden, source)
 
@@ -75,7 +75,7 @@ class ImpossibleLoopRendererTests(unittest.TestCase):
             with Image.open(gif_path) as animation:
                 self.assertEqual(animation.size, (900, 340))
                 self.assertTrue(animation.is_animated)
-                self.assertEqual(animation.n_frames, 120)
+                self.assertEqual(animation.n_frames, 168)
                 self.assertEqual(animation.info.get("loop"), 0)
 
             with Image.open(poster_path) as poster:
