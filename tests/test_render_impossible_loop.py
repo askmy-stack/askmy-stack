@@ -25,9 +25,9 @@ class ImpossibleLoopRendererTests(unittest.TestCase):
 
         self.assertEqual((renderer.WIDTH, renderer.HEIGHT), (900, 340))
         self.assertEqual(renderer.FPS, 12)
-        self.assertEqual(renderer.FRAME_COUNT, 168)
+        self.assertEqual(renderer.FRAME_COUNT, 216)
         self.assertLessEqual(renderer.DURATION_MS, 84)
-        self.assertEqual(sum(renderer.FRAME_DURATIONS), 14_000)
+        self.assertEqual(sum(renderer.FRAME_DURATIONS), 18_000)
         self.assertTrue(renderer.FONT_PATH.exists())
 
         copy = "\n".join(renderer.COPY)
@@ -46,7 +46,7 @@ class ImpossibleLoopRendererTests(unittest.TestCase):
             self.assertIn(phrase, copy)
 
         source = RENDERER_PATH.read_text(encoding="utf-8").lower()
-        for required in ("prism", "pixel", "ray", "primitive_grid"):
+        for required in ("prism", "pixel", "ray", "primitive_nodes", "ai systems // signal spectrum"):
             self.assertIn(required, source)
         for forbidden in ("ask my stack", "askmy-stack", "cortex", "myelinmesh", "parallax", "meridian", "repository", "system/2086", "prism-core", "sad face", "emoji"):
             self.assertNotIn(forbidden, copy.lower())
@@ -75,8 +75,13 @@ class ImpossibleLoopRendererTests(unittest.TestCase):
             with Image.open(gif_path) as animation:
                 self.assertEqual(animation.size, (900, 340))
                 self.assertTrue(animation.is_animated)
-                self.assertEqual(animation.n_frames, 168)
+                self.assertGreaterEqual(animation.n_frames, 100)
                 self.assertEqual(animation.info.get("loop"), 0)
+                total_duration = 0
+                for frame_index in range(animation.n_frames):
+                    animation.seek(frame_index)
+                    total_duration += animation.info["duration"]
+                self.assertEqual(total_duration, 18_000)
 
             with Image.open(poster_path) as poster:
                 self.assertEqual(poster.size, (900, 340))

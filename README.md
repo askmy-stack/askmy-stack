@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/the-impossible-loop.gif?v=prism-rays-2" alt="A retro-futuristic prism refracting pixel light through prediction, delivery, context, execution, primitives, orchestration, and autonomy" width="100%" />
+<img src="https://raw.githubusercontent.com/askmy-stack/askmy-stack/main/assets/the-impossible-loop.gif?v=clean-signal-1" alt="A clean retro-futuristic signal console tracing prediction, delivery, context, execution, primitives, orchestration, and autonomy" width="100%" />
+
+<br/><br/>
 
 <h1>ABHINAYSAI KAMINENI</h1>
 
@@ -12,13 +14,13 @@
 
 ---
 
-### `01 // PERSPECTIVE`
+### <img src="assets/icons/scan-eye.svg" width="22" alt="Perspective scan" /> <samp>01 // PERSPECTIVE</samp>
 
 > **Models predict. Agents deliver. Systems anchor context.**
 
 ---
 
-### `02 // OPERATING LAYERS`
+### <img src="assets/icons/layers.svg" width="22" alt="Operating layers" /> <samp>02 // OPERATING LAYERS</samp>
 
 | Layer | Focus |
 | :--- | :--- |
@@ -30,18 +32,31 @@
 
 ---
 
-### `03 // SYSTEM STACK`
+### <img src="assets/icons/boxes.svg" width="22" alt="System stack" /> <samp>03 // SYSTEM STACK</samp>
 
-<samp>
-INTELLIGENCE&nbsp;&nbsp;&rarr;&nbsp;&nbsp;Python · PyTorch · TensorFlow · LLM systems<br/>
-INTERFACES&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;FastAPI · MCP · Go · C++<br/>
-MEMORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;Neo4j · PostgreSQL · Redis · MongoDB<br/>
-OPERATIONS&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;Kafka · Docker · Kubernetes · Terraform · Prometheus · Grafana
-</samp>
+<div align="center">
+
+<p><samp>INTELLIGENCE LAYER</samp></p>
+
+<img src="https://img.shields.io/badge/PYTHON-10162B?style=for-the-badge&amp;logo=python&amp;logoColor=58E6FF" alt="Python" /> <img src="https://img.shields.io/badge/PYTORCH-10162B?style=for-the-badge&amp;logo=pytorch&amp;logoColor=58E6FF" alt="PyTorch" /> <img src="https://img.shields.io/badge/TENSORFLOW-10162B?style=for-the-badge&amp;logo=tensorflow&amp;logoColor=58E6FF" alt="TensorFlow" /> <img src="assets/icons/brain-circuit.svg" width="24" alt="LLM systems" /> <samp>LLM SYSTEMS</samp>
+
+<p><samp>INTERFACE LAYER</samp></p>
+
+<img src="https://img.shields.io/badge/FASTAPI-10162B?style=for-the-badge&amp;logo=fastapi&amp;logoColor=A98CFF" alt="FastAPI" /> <img src="https://img.shields.io/badge/MCP-10162B?style=for-the-badge&amp;logo=modelcontextprotocol&amp;logoColor=A98CFF" alt="Model Context Protocol" /> <img src="https://img.shields.io/badge/GO-10162B?style=for-the-badge&amp;logo=go&amp;logoColor=A98CFF" alt="Go" /> <img src="https://img.shields.io/badge/C%2B%2B-10162B?style=for-the-badge&amp;logo=cplusplus&amp;logoColor=A98CFF" alt="C++" />
+
+<p><samp>MEMORY LAYER</samp></p>
+
+<img src="https://img.shields.io/badge/NEO4J-10162B?style=for-the-badge&amp;logo=neo4j&amp;logoColor=65F6A6" alt="Neo4j" /> <img src="https://img.shields.io/badge/POSTGRESQL-10162B?style=for-the-badge&amp;logo=postgresql&amp;logoColor=65F6A6" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/REDIS-10162B?style=for-the-badge&amp;logo=redis&amp;logoColor=65F6A6" alt="Redis" /> <img src="https://img.shields.io/badge/MONGODB-10162B?style=for-the-badge&amp;logo=mongodb&amp;logoColor=65F6A6" alt="MongoDB" />
+
+<p><samp>OPERATIONS LAYER</samp></p>
+
+<img src="https://img.shields.io/badge/KAFKA-10162B?style=for-the-badge&amp;logo=apachekafka&amp;logoColor=FFC857" alt="Apache Kafka" /> <img src="https://img.shields.io/badge/DOCKER-10162B?style=for-the-badge&amp;logo=docker&amp;logoColor=FFC857" alt="Docker" /> <img src="https://img.shields.io/badge/KUBERNETES-10162B?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=FFC857" alt="Kubernetes" /> <img src="https://img.shields.io/badge/TERRAFORM-10162B?style=for-the-badge&amp;logo=terraform&amp;logoColor=FFC857" alt="Terraform" /> <img src="https://img.shields.io/badge/PROMETHEUS-10162B?style=for-the-badge&amp;logo=prometheus&amp;logoColor=FFC857" alt="Prometheus" /> <img src="https://img.shields.io/badge/GRAFANA-10162B?style=for-the-badge&amp;logo=grafana&amp;logoColor=FFC857" alt="Grafana" />
+
+</div>
 
 ---
 
-### `04 // TRANSMISSION`
+### <img src="assets/icons/radio-tower.svg" width="22" alt="Transmission signal" /> <samp>04 // TRANSMISSION</samp>
 
 <div align="center">
 
