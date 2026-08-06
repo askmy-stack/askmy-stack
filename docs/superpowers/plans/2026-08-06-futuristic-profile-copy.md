@@ -73,10 +73,10 @@ Expected: all README and GIF tests pass and the diff is whitespace-clean.
 
 Confirm that the hero, identity, numbered sections, table, stack, and links appear in that order and that no unrelated file changed.
 
-- [ ] **Step 2: Commit and push**
+- [x] **Step 2: Commit and push**
 
 Commit message: `Polish profile copy with futuristic systems layout`.
 
-- [ ] **Step 3: Open a draft PR**
+- [x] **Step 3: Open a draft PR**
 
 Title: `Polish profile copy with futuristic systems layout`.
