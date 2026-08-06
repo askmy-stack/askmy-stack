@@ -97,10 +97,10 @@ Run: `git status --short && git diff -- README.md scripts/render_impossible_loop
 
 Run: `python3 -m unittest discover -s tests -v`
 
-- [ ] **Step 3: Commit and push**
+- [x] **Step 3: Commit and push**
 
 Commit message: `Redesign profile hero as the Impossible Loop`
 
-- [ ] **Step 4: Open a draft pull request**
+- [x] **Step 4: Open a draft pull request**
 
 Target `main` and summarize the new single-GIF concept, preserved README content, deterministic renderer, and validation results.
